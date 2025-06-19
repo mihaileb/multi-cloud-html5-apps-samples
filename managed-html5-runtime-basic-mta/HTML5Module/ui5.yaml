@@ -1,6 +1,6 @@
 specVersion: "3.1"
 metadata:
-  name: sample.manage.products.app.front.afctl
+  name: sample.basic.html5.mta
 type: application
 server:
   customMiddleware:
@@ -22,5 +22,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: sample.manage.products.app.front.afctl
+        component: sample.basic.html5.mta
         ui5Theme: sap_fiori_3

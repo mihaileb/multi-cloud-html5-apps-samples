@@ -1,0 +1,18 @@
+{
+    "_version": "1.12.0",
+    "sap.app": {
+        "id": "mtx-guestbook",
+        "type": "application",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "sourceTemplate": {
+            "id": "@sap/ux-app-migrator:freestyle",
+            "version": "1.18.0",
+            "toolsId": "fe40ff91-8c42-4085-b411-bfbd6c1e9f3a"
+        }
+    },
+    "sap.cloud": {
+        "service": "cloud.service"
+    }
+}

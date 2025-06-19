@@ -1,0 +1,126 @@
+{
+  "_version": "1.12.0",
+  "sap.cloud": {
+    "public": true,
+    "service": "multi-cloud-html5-apps-samples"
+  },
+  "sap.app": {
+    "id": "sample.manage.products.fiori.launchpad.mta",
+    "type": "application",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "Testing Open Telemetry",
+    "dataSources": {
+      "mainService": {
+        "uri": "v2/Northwind/Northwind.svc/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "localUri": "localService/mainService/metadata.xml",
+          "odataVersion": "2.0"
+        }
+      }
+    },
+    "offline": false,
+    "sourceTemplate": {
+      "id": "ui5template.smartTemplate",
+      "version": "1.40.12",
+      "toolsId": "f28d413e-5547-4b86-b4b1-68cfe10b75dc"
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "fe-inbound": {
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          },
+          "semanticObject": "masterDetail",
+          "action": "display",
+          "title": "Available Products",
+          "subTitle": "",
+          "icon": ""
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "supportedThemes": [
+      "sap_hcb",
+      "sap_belize"
+    ]
+  },
+  "sap.ui5": {
+    "resources": {
+      "js": [],
+      "css": []
+    },
+    "dependencies": {
+      "minUI5Version": "1.65.0",
+      "libs": {},
+      "components": {}
+    },
+    "models": {
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "defaultBindingMode": "TwoWay",
+          "defaultCountMode": "Inline",
+          "refreshAfterChange": false,
+          "metadataUrlParams": {
+            "sap-value-list": "none"
+          }
+        }
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    }
+  },
+  "sap.ui.generic.app": {
+    "_version": "1.3.0",
+    "settings": {
+      "forceGlobalRefresh": false,
+      "objectPageHeaderType": "Dynamic",
+      "showDraftToggle": false
+    },
+    "pages": {
+      "ListReport|Products": {
+        "entitySet": "Products",
+        "component": {
+          "name": "sap.suite.ui.generic.template.ListReport",
+          "list": true,
+          "settings": {
+            "condensedTableLayout": true,
+            "smartVariantManagement": true,
+            "enableTableFilterInPageVariant": true
+          }
+        },
+        "pages": {
+          "ObjectPage|Products": {
+            "entitySet": "Products",
+            "component": {
+              "name": "sap.suite.ui.generic.template.ObjectPage"
+            }
+          }
+        }
+      }
+    }
+  }
+}

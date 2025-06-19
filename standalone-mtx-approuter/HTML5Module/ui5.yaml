@@ -1,6 +1,6 @@
 specVersion: "3.1"
 metadata:
-  name: sample.manage.products.app.front.afctl
+  name: mtx-guestbook
 type: application
 server:
   customMiddleware:
@@ -13,6 +13,7 @@ server:
             - /resources
             - /test-resources
           url: https://ui5.sap.com
+          version: ""
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
@@ -22,5 +23,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: sample.manage.products.app.front.afctl
-        ui5Theme: sap_fiori_3
+        component: mtx-guestbook
+        ui5Theme: sap_horizon

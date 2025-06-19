@@ -1,0 +1,317 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Start application-frontend-afctl",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/application-frontend-afctl",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--open",
+                "test/flpSandbox.html#app-tile"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "env": {
+                "DEBUG": "--inspect",
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/multicloud/multi-cloud-html5-apps-samples/application-frontend-afctl\"}"
+            }
+        },
+        {
+            "name": "Start application-frontend-afctl Mock",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/application-frontend-afctl",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--open",
+                "test/flpSandbox.html#app-tile"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "env": {
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/multicloud/multi-cloud-html5-apps-samples/application-frontend-afctl\"}"
+            }
+        },
+        {
+            "name": "Start application-frontend-afctl Local",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/application-frontend-afctl",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--config",
+                "./ui5-local.yaml",
+                "--open",
+                "test/flpSandbox.html#app-tile"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "env": {
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/multicloud/multi-cloud-html5-apps-samples/application-frontend-afctl\"}"
+            }
+        },
+        {
+            "name": "Start HTML5Module",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/managed-html5-runtime-basic-mta/HTML5Module",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--open",
+                "test/flpSandbox.html#app-tile"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "env": {
+                "DEBUG": "--inspect",
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/multicloud/multi-cloud-html5-apps-samples/managed-html5-runtime-basic-mta/HTML5Module\"}"
+            }
+        },
+        {
+            "name": "Start HTML5Module Local",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/managed-html5-runtime-basic-mta/HTML5Module",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--config",
+                "./ui5-local.yaml",
+                "--open",
+                "test/flpSandbox.html#app-tile"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "env": {
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/multicloud/multi-cloud-html5-apps-samples/managed-html5-runtime-basic-mta/HTML5Module\"}"
+            }
+        },
+        {
+            "name": "Start HTML5Module Mock",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/managed-html5-runtime-basic-mta/HTML5Module",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--open",
+                "test/flpSandbox.html#app-tile"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "env": {
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/multicloud/multi-cloud-html5-apps-samples/managed-html5-runtime-basic-mta/HTML5Module\"}"
+            }
+        },
+        {
+            "name": "Start HTML5Module",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/managed-html5-runtime-fiori-launchpad-mta/HTML5Module",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--open",
+                "test/flpSandbox.html#masterDetail-display"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "env": {
+                "DEBUG": "--inspect",
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/multicloud/multi-cloud-html5-apps-samples/managed-html5-runtime-fiori-launchpad-mta/HTML5Module\"}"
+            }
+        },
+        {
+            "name": "Start HTML5Module Local",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/managed-html5-runtime-fiori-launchpad-mta/HTML5Module",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--config",
+                "./ui5-local.yaml",
+                "--open",
+                "test/flpSandboxMockServer.html#masterDetail-display"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "env": {
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/multicloud/multi-cloud-html5-apps-samples/managed-html5-runtime-fiori-launchpad-mta/HTML5Module\"}"
+            }
+        },
+        {
+            "name": "Start HTML5Module Mock",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/managed-html5-runtime-fiori-launchpad-mta/HTML5Module",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--open",
+                "test/flpSandbox.html#masterDetail-display"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "env": {
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/multicloud/multi-cloud-html5-apps-samples/managed-html5-runtime-fiori-launchpad-mta/HTML5Module\"}"
+            }
+        },
+        {
+            "name": "Start HTML5Module",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/standalone-mtx-approuter/HTML5Module",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--open",
+                "test/flpSandbox.html#app-tile"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "env": {
+                "DEBUG": "--inspect",
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/multicloud/multi-cloud-html5-apps-samples/standalone-mtx-approuter/HTML5Module\"}"
+            }
+        },
+        {
+            "name": "Start HTML5Module Local",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/standalone-mtx-approuter/HTML5Module",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--config",
+                "./ui5-local.yaml",
+                "--open",
+                "test/flpSandbox.html#app-tile"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "env": {
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/multicloud/multi-cloud-html5-apps-samples/standalone-mtx-approuter/HTML5Module\"}"
+            }
+        },
+        {
+            "name": "Start HTML5Module Mock",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/standalone-mtx-approuter/HTML5Module",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--open",
+                "test/flpSandbox.html#app-tile"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "env": {
+                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/multicloud/multi-cloud-html5-apps-samples/standalone-mtx-approuter/HTML5Module\"}"
+            }
+        }
+    ]
+}
